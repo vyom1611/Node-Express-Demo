@@ -56,7 +56,8 @@ router.post('/', (req,res) => {
     } 
 
     members.push(newMember);
-    res.json(members);
+    res.json(members); // For the API
+    // res.redirect("/"); //For the Form
 });
 
 //Delete member
