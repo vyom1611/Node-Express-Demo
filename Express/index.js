@@ -2,15 +2,15 @@ const express = require('express');
 const { hostname } = require('os');
 const path = require('path'); 
 const app = express();
-const Logger = require('./middleware/logger');
+const logger = require('./middleware/logger');
 
 
-// app.use(Logger);  //Initialize middleware
+// app.use(logger);  //Initialize middleware
 
 
 //Body parser middleware
 app.use(express.json());
-app.use(express.urlencoded({ extended : false}))
+app.use(express.urlencoded({extended : false}));
 
 //Set static folder
 app.use(express.static(path.join(__dirname, "public")));
