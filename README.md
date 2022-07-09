@@ -1,4 +1,4 @@
-# Node-Express-Demo
+# REST API design in Express
 
 - Created a server using node
 
